@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DefaultConfig>
+    <Font name="微软雅黑" size="13"/>
+    <Font name="微软雅黑" size="13" bold="true"/>
+    <Font name="微软雅黑" size="13"/>
+    <Default name="Label"  value="font=&quot;0&quot; textcolor=&quot;#FFA4A4A4&quot; disabledtextcolor=&quot;#FFA7A6AA&quot; autocalcwidth=&quot;true&quot;" />
+    <Default name="Button" value="font=&quot;2&quot; align=&quot;center&quot; normalimage=&quot;file='btn_normal.png' corner='3,3,3,3'&quot; hotimage=&quot;file='btn_hover.png' corner='3,3,3,3'&quot; pushedimage=&quot;file='btn_down.png' corner='3,3,3,3'&quot; disabledimage=&quot;file='btn_disable.png' corner='3,3,3,3'&quot; textcolor=&quot;#FFA4A4A4&quot; hottextcolor=&quot;#FFEEEEEE&quot; autocalcwidth=&quot;true&quot;"/>
+</DefaultConfig>
+

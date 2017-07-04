@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="501,363" caption="0,0,0,35" mininfo="501,363" maxinfo="501,363" roundcorner="4,4" bktrans="false">
+    <Include source="default.xml" />
+    <VerticalLayout name="background">
+        <HorizontalLayout name="Titlebar" height="26" bordersize="1" bordercolor="0xFF4D4D4D" bkcolor="0xFFC9C9C9" bkcolor2="0xFF9E9E9E">
+            <Control width="10" />
+            <Label name="TitleTextLab" font="0" textcolor="0xFF414141" enabledstroke="true" strokecolor = "0xFF414141"/>
+            <Control />
+            <Control width="1" height="24" padding="0,1,0,0" bkimage="separate_line.png" />
+            <Button name="Wizard_MinBtn" width="30" height="24" padding="0,1,0,0" normalimage="min_normal.png" hotimage="min_hover.png" pushedimage="min_down.png"/>
+            <Control width="1" height="24" padding="0,1,0,0" bkimage="separate_line.png" />
+            <Button name="Wizard_CloseBtn" width="30" height="24" padding="0,1,0,0" normalimage="close_normal.png" hotimage="close_hover.png" pushedimage="close_down.png"/>
+            <Control width="5" />
+        </HorizontalLayout>
+        <HorizontalLayout height="337" bordersize="1" bordercolor="0xFF4E4E4E" bkcolor="0xFF3C3C3C" inset="1,0,1,0">
+            <Control width="15" />
+
+            <TabLayout name="WizardTab" height="330" selectedid="0">
+
+                <VerticalLayout height="330">
+                    <Control height="15" />
+                    <Label name="StepLab" text="<b>Start</b> > Uninstall > Finish" height="25" showhtml="true" />
+                    <VerticalLayout bordersize="1" height="230" bordercolor="#FF4D4D4D">
+                        <Control height="15" />
+                        <HorizontalLayout height="30">
+                            <Control width="15" />
+                            <Label name="LabelUI2" text="Are you sure you want to uninstall this application from your computer?" height="30" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                    <Control height="10" />
+                    <HorizontalLayout height="50">
+                        <Control />
+                        <Button name="UninstallBtn4UninstallPage" text="Uninstall" width="156" height="40"/>
+                        <Control width="10" />
+                        <Button name="CancelBtn4UninstallPage" text="Cancel" width="100" height="40" />
+                    </HorizontalLayout>
+                </VerticalLayout>
+
+                <VerticalLayout height="330">
+                    <Control height="15" />
+                    <Label name="StepLab" text="Start > <b>Uninstall</b> > Finish" height="25" showhtml="true" />
+                    <VerticalLayout bordersize="1" height="230" bordercolor="#FF4D4D4D">
+                        <Control height="15" />
+                        <HorizontalLayout height="192">
+                            <Control width="15" />
+                            <Label name="Wizard_BackgroundUninstallPage" height="192" bkimage="install_bg_1.png" />
+                            <Control width="15" />
+                        </HorizontalLayout>
+                        <Control height="3" />
+                        <HorizontalLayout height="5">
+                            <Control width="15" />
+                            <Progress name="Wizard_UninstallProgress" height="5" bkimage="progress_background.png" align="center" foreimage="progress_foreground.png" min="0" max="30000" value="50" hor="true" />
+                            <Control width="15" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                    <Control height="15" />
+                    
+                </VerticalLayout>
+                <VerticalLayout height="330">
+                
+                
+                    <Control height="15" />
+                    <Label name="StepLab" text="Start > Uninstall > <b>Finish</b>" height="25" showhtml="true" />
+                        
+                    <VerticalLayout bordersize="1" height="230" bordercolor="#FF4D4D4D">
+                        <Control height="15" />
+                        <HorizontalLayout height="30">
+                            <Control width="15" />
+                            <Label name="LabelUI1" text="Application has been removed from your computer."/>
+                        </HorizontalLayout>
+                        <HorizontalLayout height="30">
+                            <Control width="15" />
+                            <Label name="LabelUI11" text="Please click &quot;Finish&quot; to exit." />
+                        </HorizontalLayout>
+                        <Control />
+                    </VerticalLayout>
+         
+                    <Control height="10" />
+                    <HorizontalLayout height="50">
+                        <Control />
+                        <Button name="FinishedBtn4UninstallPage" text="Finish" width="100" height="40"/>
+                    </HorizontalLayout>
+             
+                </VerticalLayout>
+            </TabLayout>
+             
+            <Control width="15" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

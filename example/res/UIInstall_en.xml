@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="501,363" caption="0,0,0,26" mininfo="501,363" maxinfo="501,363" roundcorner="4,4" bktrans="false">
+    <Include source="default.xml" />
+    <VerticalLayout name="background">
+        <HorizontalLayout name="Titlebar" height="26" bordersize="1" bordercolor="0xFF4D4D4D" bkcolor="0xFFC9C9C9" bkcolor2="0xFF9E9E9E">
+            <Control width="10" />
+            <Label name="TitleTextLab" font="1" textcolor="0xFF414141" enabledstroke="true" strokecolor = "0xFF414141"/>
+            <Control />
+            <Control width="1" height="24" padding="0,1,0,0" bkimage="separate_line.png" />
+            <Button name="Wizard_MinBtn" width="30" height="24" padding="0,1,0,0" normalimage="min_normal.png" hotimage="min_hover.png" pushedimage="min_down.png"/>
+            <Control width="1" height="24" padding="0,1,0,0" bkimage="separate_line.png" />
+            <Button name="Wizard_CloseBtn" width="30" height="24" padding="0,1,0,0" normalimage="close_normal.png" hotimage="close_hover.png" pushedimage="close_down.png" disabledimage="close_disable.png"/>
+            <Control width="5" />
+        </HorizontalLayout>
+        <HorizontalLayout height="337" bordersize="1" bordercolor="0xFF4E4E4E" bkcolor="0xFF3C3C3C" inset="1,0,1,0">
+            <Control width="15" />
+            <TabLayout name="WizardTab" height="337" selectedid="0">
+                <VerticalLayout height="337">
+                    <Control height="15" />
+                    <Label name="StepLab" text="<b>EULA</b> > Options > Installation > Finish" height="25" showhtml="true" />
+                    <VerticalLayout height="230">
+                        <RichEdit name="LicenceRichEdit"  inset="15,15,15,15" bordersize="1"  bordercolor="#FF4D4D4D" bkcolor="#fffffbf0" textcolor="#00000000"  multiline="true" vscrollbar="true" autovscroll="true" enabled="false" rich="true" readonly="true" />
+                    </VerticalLayout>
+                    <Control height="10" />
+                    <HorizontalLayout height="50">
+                        <Control />
+                        <Button name="Wizard_NextBtn4Page1" text="Accept and Install" width="156" height="40"/>
+                        <Control width="10" />
+                        <Button name="Wizard_CancelBtn4Page1" text="Cancel" width="100" height="40"/>
+                    </HorizontalLayout>
+                </VerticalLayout>
+                <VerticalLayout height="337">
+                    <Control height="15" />
+                    <Label name="StepLab" text="EULA > <b>Options</b> > Installation > Finish" height="25" showhtml="true" />
+                    <VerticalLayout bordersize="1" height="230" bordercolor="#FF4D4D4D">
+                        <Control height="15" />
+                        <HorizontalLayout height="30">
+                            <Control width="15" />
+                            <Label text="Installation Directory" width="130" />
+                            <Label height="1" padding="9,15,0,0" bkcolor="#FF4D4D4D"/>
+                        </HorizontalLayout>
+                        <HorizontalLayout height="40">
+                            <Control width="15" />
+                            <Edit name="Wizard_InstallPathEdit4Page2" width="330" height="40" bkcolor="#FFFFFFFF" bordercolor="#00C0C0C0" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                            <Control  />
+                            <Button name="Wizard_InstallPathBtn4Page2" text="Browse..."  width="80" height="40"/>
+                            <Control  width="15" />
+                        </HorizontalLayout>
+                        <HorizontalLayout height="25">
+                            <Control width="15"/>
+                            <Label text="Space required:" width="100" height="25" />
+                            <Label name="Wizard_RequiredSpaceLab4Page2" text="0MB" width="50" height="25" />
+                            <Label text="Space available:" width="100" height="25" />
+                            <Label name="Wizard_UsableSpaceLab4Page2" text="N/A" width="50" height="25" />
+                            <Control />
+                        </HorizontalLayout>
+                        <Control height="15" />
+                        <HorizontalLayout height="30">
+                            <Control width="15" />
+                            <Label text="Installation Options" width="130" />
+                            <Label height="1" padding="9,15,0,0" bkcolor="#FF4D4D4D" />
+                        </HorizontalLayout>
+                        <HorizontalLayout height="25">
+                            <Control width="15" />
+                            <Option name="Wizard_ShortCutBtn4Page2" width="24" height="24" align="center" normalimage="check_off.png" selected="true" selectedimage="check_on.png" />
+                            <Control width="5" />
+                            <Label text="Create a desktop icon" height="25" />
+                        </HorizontalLayout>
+                        <HorizontalLayout height="25" visible="false">
+                            <Control width="15" />
+                            <Option name="Wizard_QuickLaunchBarBtn4Page2" width="24" height="24" align="center" normalimage="check_off.png" selected="true" selectedimage="check_on.png" />
+                            <Control width="5" />
+                            <Label text="Create a Quick Launch icon" height="25" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                    <Control height="10" />
+                    <HorizontalLayout height="50">
+                        <Button name="Wizard_BackBtn4Page2" text="Previous" width="100" height="40"/>
+                        <Control />
+                        <Button name="Wizard_StartInstallBtn4Page2" text="Install" width="156" height="40"/>
+                        <Control width="10" />
+                        <Button name="Wizard_CancelBtn4Page2" text="Cancel" width="100" height="40"/>
+                    </HorizontalLayout>
+                </VerticalLayout>
+                <VerticalLayout height="337">
+                    <Control height="15" />
+                    <Label name="StepLab" text="EULA > Options > <b>Installation</b> > Finish" height="25" showhtml="true" />
+                    <VerticalLayout bordersize="1" height="230" bordercolor="#FF4D4D4D">
+                        <Control height="15" />
+                        <HorizontalLayout height="192">
+                            <Control width="15" />
+                            <Label name="Wizard_Background4Page3" height="192" bkimage="install_bg_1.png" />
+                            <Control width="15" />
+                        </HorizontalLayout>
+                        <Control height="3" />
+                        <HorizontalLayout height="5">
+                            <Control width="15" />
+                            <Progress name="Wizard_InstallProgress" height="5" bkimage="progress_background.png" align="center" foreimage="progress_foreground.png" min="0" max="30000" value="50" hor="true" />
+                            <Control width="15" />
+                        </HorizontalLayout>
+                        <Control height="15" />
+                    </VerticalLayout>
+                    <Control height="10" />
+                    <HorizontalLayout height="50">
+                        <Control />
+                        <Button name="Wizard_CancelBtn4Page3" text="Cancel" width="100" height="40"/>
+                    </HorizontalLayout>
+                </VerticalLayout>
+                <VerticalLayout height="330">
+                    <Control height="15" />
+                    <Label name="StepLab" text="EULA > Options > Installation > <b>Finish</b>" height="25" showhtml="true" />
+                    <VerticalLayout bordersize="1" height="230" bordercolor="#FF4D4D4D">
+                        <Control height="15" />
+                        <HorizontalLayout height="30">
+                            <Control width="15" />
+                            <Label text="Software has been successfully installed!" />
+                        </HorizontalLayout>
+                        <Control height="5" />
+                        <HorizontalLayout height="25">
+                            <Control width="15" />
+                            <Option name="Wizard_RuningNowBtn" width="24" height="24" align="center" normalimage="check_on.png" selectedimage="check_off.png" selected="true"/>
+                            <Control width="5" />
+                            <Label text="Run application now" width="160" height="25" />
+                        </HorizontalLayout>
+                        <Control />
+                    </VerticalLayout>
+                    <Control height="10" />
+                    <HorizontalLayout height="50">
+                        <Control />
+                        <Button name="Wizard_FinishedBtn4Page4" text="Finish" width="156" height="40"/>
+                    </HorizontalLayout>
+                </VerticalLayout>
+            </TabLayout>
+            <Control width="15" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>
