@@ -21,8 +21,8 @@ nsTBCIASkinEngine 的使用，可参考 S-EYE 的 nsi 代码
 
 ## ScreenShots
 
-![1.png](screenshots\1.png)
+![1.png](./screenshots/1.png)
 
-![2.png](screenshots\2.png)
+![2.png](./screenshots/2.png)
 
-![3.png](screenshots\3.png)
+![3.png](./screenshots/3.png)
